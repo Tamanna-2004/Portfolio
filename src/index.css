@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #121212; /* Soft dark gray */
+  color: #ffffff; /* White text for contrast */
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh; /* Ensure body takes full height of viewport */
+  width: 100vw; /* Full width of the viewport */
+  overflow-x: hidden;
+  background: hsla(0, 0%, 0%, 1);
+
+  background: radial-gradient(circle, hsla(0, 0%, 0%, 1) 53%, hsla(287, 61%, 12%, 1) 100%);
+
+  background: -moz-radial-gradient(circle, hsla(0, 0%, 0%, 1) 53%, hsla(287, 61%, 12%, 1) 100%);
+
+  background: -webkit-radial-gradient(circle, hsla(0, 0%, 0%, 1) 53%, hsla(287, 61%, 12%, 1) 100%);
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#290C31", GradientType=1 );
+}
+
+* {
+  box-sizing: border-box; /* Ensures padding and border are included in element's width and height */
+}
+.hero-div{
+  animation: slideFromLeft 1s ease forwards;
+}
+.avatar{
+  animation: slideFromRight 1s ease backwards;
+}
+@keyframes slideFromRight {
+  0%{
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slideFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.card_div {
+  background-image: linear-gradient(60deg, rgba(0,0,0,1) 50%, rgb(68, 27, 36) 100%);
+  transition: all 1.5s ease-in-out; /* Smooth transition for background */
+}
+
+/* Shift the gradient smoothly on hover */
+.card_div:hover {
+  background-image: linear-gradient(-60deg, rgba(0,0,0,1) 50%, rgb(68, 27, 36) 100%);
+}
+/* Hide the scrollbar but allow scrolling */
+.hide-scrollbar::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.tab_{
+  background: rgb(24,121,103);
+background: radial-gradient(circle, rgba(24,121,103,1) 0%, rgba(16,28,27,1) 100%);
+}
+.box_{
+  background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(21,36,84,1) 100%);
+}
