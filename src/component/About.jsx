@@ -19,14 +19,13 @@ import "animate.css";
 
 const About = () => {
   return (
-    <section id="about" className="w-[100%] p-5 md:w-[90%] flex flex-col items-center overflow-hidden">
+    <section id="about" className="w-[100%] p-5 md:w-[90%] flex flex-col items-center">
 
-      <div className="md:w-[80%] mx-auto inline-block text-center mb-8 ml-7 md:ml-24 w-[100%]">
+      <div className="md:w-[80%] mx-auto inline-block text-center mb-8 md:ml-24 w-[100%]">
         <h1 className="text-gray-400 text-6xl animate__animated animate__backInUp tracking-widest">
           Skills
         </h1>
         </div>
-      <div className="">
       <div className="w-[100%] mx-auto flex gap-5 md:flex-row overflow-y-hidden overflow-x-scroll md:w-[80%] hide-scrollbar">
         <Card heading="Frontend"
          content="focus on creating responsive and visually stunning web applications that 
@@ -39,8 +38,7 @@ const About = () => {
           heading="Backend"
           content="That's great! Keep practicing, and you'll improve over time. Here’s a short description for your backend skills:
           I focus on building scalable and efficient backend systems using Node.js, Express, and databases like MongoDB and MySQL.
-          I'm continuously learning to optimize performance, handle authentication, and ensure secure API development."
-          img1 = {node} img2 = {express} img3 = {php}
+          " img1 = {node} img2 = {express} img3 = {php}
           p_bar = "bg-green-300" p_bar_w = "w-[45%]"
         />
         <Card2 heading="Database" 
@@ -65,10 +63,9 @@ const About = () => {
          p_bar = "bg-green-500" p_bar_w = "w-[70%]"
         />
       </div>
-      </div>
-      <p className="text-gray-400 text-xs w-[70%] p-5 text-center mt-7 leading-5">
+      {/* <p className="text-gray-400 text-xs w-[70%] p-5 text-center mt-7 leading-5s">
       I am currently pursuing my Computer Science Engineering (CSE) degree at MAIT College. With a strong foundation in programming and a passion for technology, I am constantly exploring new tools and frameworks to enhance my skills. My focus lies in both frontend and backend development, and I aim to build innovative solutions that can make a real-world impact.
-      </p>
+      </p> */}
     </section>
   );
 };
