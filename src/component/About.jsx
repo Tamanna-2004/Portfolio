@@ -19,14 +19,14 @@ import "animate.css";
 
 const About = () => {
   return (
-    <section id="about" className="w-[100%] p-5 md:w-[90%] flex flex-col items-center">
+    <section id="about" className="w-full p-5 md:w-[90%] flex flex-col items-center">
 
-      <div className="md:w-[80%] mx-auto inline-block text-center mb-8 md:ml-24 w-[100%]">
+      <div className="md:w-[80%] mx-auto inline-block text-center mb-8 md:ml-24 w-full">
         <h1 className="text-gray-400 text-6xl animate__animated animate__backInUp tracking-widest">
           Skills
         </h1>
         </div>
-      <div className="w-[100%] mx-auto flex gap-5 md:flex-row overflow-y-hidden overflow-x-scroll md:w-[80%] hide-scrollbar">
+      <div className="w-full mx-auto flex gap-5 md:flex-row overflow-y-hidden overflow-x-scroll md:w-[80%] hide-scrollbar">
         <Card heading="Frontend"
          content="focus on creating responsive and visually stunning web applications that 
          prioritize user experience and performance. With expertise in HTML, CSS, JavaScript,
